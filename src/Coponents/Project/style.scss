@@ -1,0 +1,8 @@
+@import "../../Style-config//mixins.scss";
+@import "../../Style-config/variable.scss";
+
+.project-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
