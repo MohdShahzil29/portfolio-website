@@ -6,7 +6,7 @@ import Form from "./form";
 
 const Contact = () => {
   return (
-    <Section id="Contact" title="Feel Free And Contact us" background="light">
+    <Section id="contact" title="Feel Free And Contact us" background="light">
       <div className="contact-content-wrapper">
         <ContactInfo />
         <Form />

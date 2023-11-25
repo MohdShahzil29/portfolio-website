@@ -64,7 +64,7 @@ function Navigtion() {
                   text="Contact me"
                   id="navContactMe"
                   action={() => {
-                      menuItemClickHandler("Contact");
+                      menuItemClickHandler("contact");
                   }}
               />
           </div>

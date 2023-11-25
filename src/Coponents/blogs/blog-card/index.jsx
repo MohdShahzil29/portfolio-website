@@ -2,7 +2,7 @@ import React from "react";
 import "./style.scss";
 import Arrow from "../../Shared/Arrow";
 
-const BlogCard = ({ user, date, image, title, discription }) => {
+const BlogCard = ({ user, date, image, title, discription, href }) => {
   return (
     <div className="blog-card">
       <div className="image-scetion">
@@ -16,7 +16,7 @@ const BlogCard = ({ user, date, image, title, discription }) => {
         <h3>{title}</h3>
         <p>{discription}</p>
         <div className="readmore-cta">
-          <span className="text">Read More</span>
+          <a href={href} target="_blank" className="text" >Read More</a>
           <Arrow />
         </div>
       </div>

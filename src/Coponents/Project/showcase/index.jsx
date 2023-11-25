@@ -2,7 +2,7 @@ import React from "react";
 import "./style.scss";
 import Arrow from "../../Shared/Arrow";
 
-const Showcase = ({ data, transition }) => {
+const Showcase = ({ data, transition, href }) => {
   return (
     <div className="Projects-showcase">
       {data.map((project) => (
@@ -19,7 +19,7 @@ const Showcase = ({ data, transition }) => {
           <div className="meta-content">
             <h3>{project.name}</h3>
             <div className="go-to-cta">
-              <span className="text">Project Detail</span>
+              <a href={`${project.link}`} target="_blank" className="text">Project Detail</a>
               <Arrow />
             </div>
           </div>

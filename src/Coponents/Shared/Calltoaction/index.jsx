@@ -2,10 +2,10 @@ import React from "react";
 import "./style.scss";
 import Arrow from "../Arrow";
 
-function CallToAction({ text }) {
+function CallToAction({ text, href }) {
   return (
     <div className="call-to-action">
-      <span className="text">{text}</span>
+      <a href={href} target="_blank" className="text">{text}</a>
       <Arrow />
     </div>
   );
